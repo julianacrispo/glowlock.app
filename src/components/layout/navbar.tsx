@@ -31,7 +31,7 @@ export default function Navbar() {
           </span>
         </div>
         <a
-          href="https://apps.apple.com/app/glowlock"
+          href="https://apps.apple.com/app/id6757251908"
           className="bg-ploy-background-inverse text-ploy-text-on-accent-primary font-bold text-xs tracking-[0.15em] uppercase flex items-center gap-2 duration-150 ease-in-out px-4 py-2 rounded-lg hover:scale-102 hover:bg-ploy-background-inverse"
         >
           <NavbarIcon1 />

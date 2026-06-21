@@ -16,16 +16,6 @@ export default function HeroSection() {
       <div className="mx-auto flex max-w-6xl flex-col items-center lg:flex-row lg:items-center lg:gap-16">
         {/* Copy column */}
         <div className="flex max-w-xl flex-col items-center lg:items-start">
-          <div className="mb-6">
-            <img
-              alt=""
-              loading="eager"
-              width="56"
-              height="56"
-              src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
-              className="w-14 overflow-clip"
-            />
-          </div>
           <h1 className="[font-weight:inherit] text-center max-w-2xl lg:text-left">
             <span
               style={{
@@ -44,7 +34,7 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col items-center gap-4 mt-10 lg:items-start">
             <a
-              href="https://apps.apple.com/app/glowlock"
+              href="https://apps.apple.com/app/id6757251908"
               className="bg-ploy-background-accent-primary text-ploy-button-primary-text leading-snug font-bold text-sm tracking-[0.15em] uppercase flex items-center gap-3 duration-150 ease-in-out px-8 py-4 rounded-lg group hover:scale-102 hover:bg-ploy-background-accent-primary"
               data-ploy-component-type="button"
               data-ploy-component-variant="primary"
@@ -76,14 +66,16 @@ export default function HeroSection() {
 
         {/* Product column */}
         <div className="w-full max-w-[18rem] mt-12 shrink-0 lg:mt-0 lg:max-w-[22rem]">
-          <img
-            alt="Glowlock shield screen shown when you open a blocked app, with an option to open the app intentionally"
-            loading="eager"
-            width="516"
-            height="688"
-            src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/d568ce5a-2bfbb638-5.png"
-            className="w-full h-auto"
-          />
+          <div className="w-full overflow-hidden aspect-[10/11]">
+            <img
+              alt="Glowlock shield screen shown when you open a blocked app, with an option to open the app intentionally"
+              loading="eager"
+              width="516"
+              height="688"
+              src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/d568ce5a-2bfbb638-5.png"
+              className="w-full h-full object-cover object-bottom"
+            />
+          </div>
         </div>
       </div>
     </section>
