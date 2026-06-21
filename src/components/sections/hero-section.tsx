@@ -1,6 +1,7 @@
 import HeroSectionIcon1 from "../svgs/hero-section-icon-1";
 import HeroSectionIcon2 from "../svgs/hero-section-icon-2";
 import HeroSectionIcon3 from "../svgs/hero-section-icon-3";
+import WaitlistButton from "@/components/ui/waitlist-button";
 
 /**
  * @ployComponent
@@ -65,12 +66,7 @@ export default function HeroSection() {
         </a>
         <p className="text-ploy-text-secondary leading-snug text-sm">
           {"Not on iPhone?" + " "}
-          <button
-            style={{ fontVariationSettings: "inherit" }}
-            className="[color:inherit] [font-weight:inherit] underline transition-colors p-0 hover:text-ploy-text-primary"
-          >
-            {"Join the Android waitlist →"}
-          </button>
+          <WaitlistButton source="hero" />
         </p>
       </div>
       <div className="flex items-center gap-2 mt-6">
