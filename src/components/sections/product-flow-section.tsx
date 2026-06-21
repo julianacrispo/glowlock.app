@@ -16,31 +16,31 @@ export const productFlowItems: ProductFlowItemProps[] = [
   {
     step: "01",
     label: "Choose",
-    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/619266d0-2f985adb-3.png",
+    src: "/screens/choose.png",
     alt: "Glowlock screen to choose which apps pull you in most",
   },
   {
     step: "02",
     label: "Shield",
-    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/d568ce5a-2bfbb638-5.png",
+    src: "/screens/shield.png",
     alt: "Glowlock customizable shield that appears when you open a blocked app",
   },
   {
     step: "03",
     label: "Coach",
-    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/de15db0d-ef92fd67-1.png",
+    src: "/screens/coach.png",
     alt: "Glowlock AI habit coach asking what you are trying to avoid right now",
   },
   {
     step: "04",
     label: "Insights",
-    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/84b6552b-395bb1c4-4.png",
+    src: "/screens/insights.png",
     alt: "Glowlock insights showing presence score, app time, and the emotions behind your opens",
   },
   {
     step: "05",
     label: "Friends",
-    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/91c759b3-2ffa1ab0-2.png",
+    src: "/screens/friends.png",
     alt: "Glowlock friends screen for sharing unlock time with people you choose",
   },
 ];
@@ -60,16 +60,14 @@ function ProductFlowItem({ step, label, src, alt }: ProductFlowItemProps) {
           {label}
         </span>
       </div>
-      <div className="w-full max-w-[20rem] overflow-hidden aspect-[10/11]">
-        <img
-          alt={alt}
-          loading="lazy"
-          width="516"
-          height="688"
-          src={src}
-          className="w-full h-full object-cover object-bottom"
-        />
-      </div>
+      <img
+        alt={alt}
+        loading="lazy"
+        width="800"
+        height="927"
+        src={src}
+        className="w-full max-w-[20rem] h-auto"
+      />
     </div>
   );
 }
