@@ -40,7 +40,7 @@ function HowItWorksSectionMockupItem({
       <p className="text-ploy-text-secondary leading-relaxed text-sm text-center max-w-[17.5rem] mb-4">
         {description}
       </p>
-      <div className="w-full max-w-[17.5rem] relative mx-auto">
+      <div className="w-full max-w-[22rem] relative mx-auto">
         <div
           className="border-solid border-ploy-neutral-primary-s4 bg-ploy-background-secondary relative shadow-lg p-2 rounded-[2rem] border-2 bg-card overflow-hidden"
           data-ploy-component-type="card"
