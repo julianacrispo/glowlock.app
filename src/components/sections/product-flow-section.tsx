@@ -1,0 +1,110 @@
+/**
+ * @ployComponent
+ * @ployComponentId product-flow-section
+ * @ployComponentType section
+ * @ployComponentPattern feature
+ * @ployComponentDescription Product walkthrough gallery showing the real Glowlock app screens (choose apps, shield, AI coach, insights, friends) as a numbered loop on the cream canvas. Each item renders a step label plus a full app screenshot whose caption is baked into the image.
+ */
+type ProductFlowItemProps = {
+  step: string;
+  label: string;
+  src: string;
+  alt: string;
+};
+
+export const productFlowItems: ProductFlowItemProps[] = [
+  {
+    step: "01",
+    label: "Choose",
+    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/619266d0-2f985adb-3.png",
+    alt: "Glowlock screen to choose which apps pull you in most",
+  },
+  {
+    step: "02",
+    label: "Shield",
+    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/d568ce5a-2bfbb638-5.png",
+    alt: "Glowlock customizable shield that appears when you open a blocked app",
+  },
+  {
+    step: "03",
+    label: "Coach",
+    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/de15db0d-ef92fd67-1.png",
+    alt: "Glowlock AI habit coach asking what you are trying to avoid right now",
+  },
+  {
+    step: "04",
+    label: "Insights",
+    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/84b6552b-395bb1c4-4.png",
+    alt: "Glowlock insights showing presence score, app time, and the emotions behind your opens",
+  },
+  {
+    step: "05",
+    label: "Friends",
+    src: "https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/91c759b3-2ffa1ab0-2.png",
+    alt: "Glowlock friends screen for sharing unlock time with people you choose",
+  },
+];
+
+function ProductFlowItem({ step, label, src, alt }: ProductFlowItemProps) {
+  return (
+    <div className="flex flex-col items-center">
+      <div className="flex items-center gap-3 mb-4">
+        <div
+          className="border-solid border-ploy-neutral-primary-s4 bg-ploy-background-secondary text-ploy-text-primary leading-snug font-bold text-xs w-9 h-9 flex justify-center items-center shadow-[2px_3px_0px_0px_oklab(0.850565_0.00277162_0.0179251)] rounded-lg bg-card border tabular-nums"
+          data-ploy-component-type="card"
+          data-ploy-surface-depth="deep"
+        >
+          {step}
+        </div>
+        <span className="text-ploy-text-secondary leading-snug font-bold text-xs tracking-[0.25em] uppercase block">
+          {label}
+        </span>
+      </div>
+      <img
+        alt={alt}
+        loading="lazy"
+        width="516"
+        height="688"
+        src={src}
+        className="w-full max-w-[20rem] h-auto"
+      />
+    </div>
+  );
+}
+
+export default function ProductFlowSection({
+  items = productFlowItems,
+}: {
+  items?: ProductFlowItemProps[];
+}) {
+  return (
+    <section className="px-6 max-md:py-16 md:py-24">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center max-md:mb-12 md:mb-16">
+          <p className="text-ploy-text-secondary leading-snug text-xs tracking-[0.25em] uppercase mb-4">
+            {"--- How It Works ---"}
+          </p>
+          <h2
+            style={{
+              fontFamily:
+                "'Instrument Serif', 'Instrument Serif Fallback', Georgia, serif",
+            }}
+            className="text-balance text-ploy-text-primary leading-[1.1] italic [font-weight:inherit] max-md:text-4xl max-md:leading-[1.1] md:text-6xl md:leading-[1.1]"
+          >
+            {"Not another blocker. A loop that rewires the habit."}
+          </h2>
+          <p className="text-ploy-text-secondary leading-relaxed max-w-xl mt-5 mx-auto max-md:text-sm max-md:leading-relaxed md:text-base md:leading-relaxed">
+            {
+              "Pick the apps that pull you in, design the shield that meets you there, and turn every unlock into a moment of intention you can actually learn from."
+            }
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-md:gap-12 md:gap-x-8 md:gap-y-14">
+          {items.map((item, index) => (
+            <ProductFlowItem key={index} {...item} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
