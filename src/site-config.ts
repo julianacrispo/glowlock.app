@@ -7,7 +7,8 @@ interface SiteConfig {
 }
 
 export const SITE_CONFIG: SiteConfig = {
-  name: "",
-  description: "",
+  name: "GlowLock",
+  description:
+    "GlowLock shields you from compulsive scrolling, reveals the emotions driving your habits, and helps you build the pause that rewires your behavior. 96+ five-star reviews on iOS.",
   sourceSitemapUrl: "",
 };
