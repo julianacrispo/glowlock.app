@@ -1,6 +1,6 @@
 // SSR routes are invisible to @astrojs/sitemap (it only sees prerendered
 // pages), so list them here. This runs synchronously in Astro's config chain
-// (plain Node) — no `astro:content`/`getCollection`, no `@/` alias — so we read
+// (plain Node); no `astro:content`/`getCollection`, no `@/` alias, so we read
 // the `pages` collection from disk and reproduce the glob loader's id
 // (per-segment github slug, `/index` stripped, `slug` override) to match what
 // getEntry() resolves. Add more sources with relative imports.

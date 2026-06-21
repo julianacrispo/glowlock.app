@@ -5,7 +5,7 @@ import { glob } from "astro/loaders";
 // Build-time collection: Markdown is schema-validated and bundled into the
 // server build. Use z.coerce.date() (not z.date()) since frontmatter dates are
 // serialized. For external CMS/API/DB content, use a live collection
-// (src/live.config.ts) instead — not for repo Markdown.
+// (src/live.config.ts) instead, not for repo Markdown.
 //
 // To add a page (rendered on demand by src/pages/[...slug].astro at /<filename>):
 // 1. Create `src/content/pages/<slug>.md` (or `.mdx`).
