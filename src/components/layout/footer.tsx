@@ -33,12 +33,12 @@ export default function Footer({ items = links }: { items?: LinkItemProps[] }) {
       <div className="text-center max-w-6xl flex flex-col items-center gap-6 mx-auto">
         <div className="flex items-center gap-2">
           <img
-            alt=""
+            alt="GlowLock app icon"
             loading="eager"
             width="20"
             height="20"
-            src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
-            className="w-5 opacity-70 overflow-clip"
+            src="/glow-icon.png"
+            className="w-5 h-5 rounded-[4px]"
           />
           <span className="text-ploy-text-secondary font-bold text-xs tracking-[0.25em] uppercase block">
             {"GlowLock"}
