@@ -42,7 +42,7 @@ export default function FounderStorySection({
             <img
               alt="Juliana, founder of GlowLock"
               loading="eager"
-              src="https://www.glowlock.app/juliana.png"
+              src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/fbb33a75-slurp-juliana.webp"
               className="w-full h-full absolute object-cover object-[50%_0%] inset-0 overflow-clip"
             />
           </div>

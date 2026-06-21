@@ -37,7 +37,7 @@ export default function Footer({ items = links }: { items?: LinkItemProps[] }) {
             loading="eager"
             width="20"
             height="20"
-            src="https://www.glowlock.app/brain-icon.png"
+            src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
             className="w-5 opacity-70 overflow-clip"
           />
           <span className="text-ploy-text-secondary font-bold text-xs tracking-[0.25em] uppercase block">

@@ -17,7 +17,7 @@ export default function Navbar() {
             loading="eager"
             width="24"
             height="24"
-            src="https://www.glowlock.app/brain-icon.png"
+            src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
             className="w-6 overflow-clip"
           />
           <span

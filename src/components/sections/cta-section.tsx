@@ -19,7 +19,7 @@ export default function CtaSection() {
             loading="eager"
             width="48"
             height="48"
-            src="https://www.glowlock.app/brain-icon.png"
+            src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
             className="w-12 opacity-30 overflow-clip"
           />
         </div>

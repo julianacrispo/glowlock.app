@@ -24,7 +24,7 @@ export default function HeroSection() {
           loading="eager"
           width="80"
           height="80"
-          src="https://www.glowlock.app/brain-icon.png"
+          src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
           className="w-20 overflow-clip"
         />
       </div>

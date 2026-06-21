@@ -10,7 +10,7 @@ export default function HowItWorksSectionMockup2() {
         loading="eager"
         width="390"
         height="844"
-        src="https://www.glowlock.app/screenshot-insights.png"
+        src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/de1d3e8e-slurp-screenshot-insights.webp"
         className="w-full h-auto overflow-clip"
       />
     </div>
