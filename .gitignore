@@ -31,3 +31,7 @@ pnpm-debug.log*
 
 # Ploy discouraged files
 wrangler.toml
+logs/
+lost+found/
+.ploy/
+ploy.astro.config.mjs
