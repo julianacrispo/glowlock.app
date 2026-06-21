@@ -3,7 +3,7 @@
  * @ployComponentId product-flow-section
  * @ployComponentType section
  * @ployComponentPattern feature
- * @ployComponentDescription Product walkthrough gallery showing the real Glowlock app screens (choose apps, shield, AI coach, insights, friends) as a numbered loop on the cream canvas. Each item renders a step label plus a full app screenshot whose caption is baked into the image.
+ * @ployComponentDescription Product walkthrough gallery showing the real Glowlock app screens (choose apps, shield, AI coach, insights, friends) as a numbered loop on the cream canvas. Each item renders a step label plus a full app screenshot; the baked-in top caption is cropped off via an object-cover/object-bottom wrapper. Items lay out as a centered flex-wrap so an odd final row (4 & 5) stays centered.
  */
 type ProductFlowItemProps = {
   step: string;
@@ -60,14 +60,16 @@ function ProductFlowItem({ step, label, src, alt }: ProductFlowItemProps) {
           {label}
         </span>
       </div>
-      <img
-        alt={alt}
-        loading="lazy"
-        width="516"
-        height="688"
-        src={src}
-        className="w-full max-w-[20rem] h-auto"
-      />
+      <div className="w-full max-w-[20rem] overflow-hidden aspect-[10/11]">
+        <img
+          alt={alt}
+          loading="lazy"
+          width="516"
+          height="688"
+          src={src}
+          className="w-full h-full object-cover object-bottom"
+        />
+      </div>
     </div>
   );
 }
@@ -99,9 +101,14 @@ export default function ProductFlowSection({
             }
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-md:gap-12 md:gap-x-8 md:gap-y-14">
+        <div className="flex flex-wrap justify-center max-md:gap-12 md:gap-x-8 md:gap-y-14">
           {items.map((item, index) => (
-            <ProductFlowItem key={index} {...item} />
+            <div
+              key={index}
+              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] flex justify-center"
+            >
+              <ProductFlowItem {...item} />
+            </div>
           ))}
         </div>
       </div>
