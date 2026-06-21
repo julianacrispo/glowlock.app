@@ -1,6 +1,7 @@
 import HeroSectionIcon1 from "../svgs/hero-section-icon-1";
 import CtaSectionIcon1 from "../svgs/cta-section-icon-1";
 import TestimonialSectionIcon2 from "../svgs/testimonial-section-icon-2";
+import WaitlistButton from "@/components/ui/waitlist-button";
 
 /**
  * @ployComponent
@@ -49,12 +50,7 @@ export default function CtaSection() {
           </a>
           <p className="text-ploy-text-secondary leading-snug text-sm">
             {"Not on iPhone?" + " "}
-            <button
-              style={{ fontVariationSettings: "inherit" }}
-              className="[color:inherit] [font-weight:inherit] underline transition-colors p-0 hover:text-ploy-text-primary"
-            >
-              {"Join the Android waitlist →"}
-            </button>
+            <WaitlistButton source="final-cta" />
           </p>
         </div>
         <div className="flex justify-center items-center gap-2 mt-6">
