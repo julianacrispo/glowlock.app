@@ -66,16 +66,14 @@ export default function HeroSection() {
 
         {/* Product column */}
         <div className="w-full max-w-[18rem] mt-12 shrink-0 lg:mt-0 lg:max-w-[22rem]">
-          <div className="w-full overflow-hidden aspect-[10/11]">
-            <img
-              alt="Glowlock shield screen shown when you open a blocked app, with an option to open the app intentionally"
-              loading="eager"
-              width="516"
-              height="688"
-              src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/d568ce5a-2bfbb638-5.png"
-              className="w-full h-full object-cover object-bottom"
-            />
-          </div>
+          <img
+            alt="Glowlock shield screen shown when you open a blocked app, with an option to open the app intentionally"
+            loading="eager"
+            width="800"
+            height="927"
+            src="/screens/shield.png"
+            className="w-full h-auto"
+          />
         </div>
       </div>
     </section>
