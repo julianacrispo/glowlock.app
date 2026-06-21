@@ -53,7 +53,7 @@ export const scienceSectionIcons: ScienceSectionIconItemProps[] = [
     icon: <ScienceSectionIcon3 />,
     title: "Identity Shift",
     description:
-      "Your shield reinforces who you want to be. Over time, “I don't scroll” becomes part of your identity, not a rule you force.",
+      "Your shield reinforces who you want to be. Over time, “I don't scroll” becomes part of your identity — not a rule you force.",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function ScienceSection({
           </h2>
           <p className="text-ploy-text-secondary leading-relaxed max-w-lg mt-4 mx-auto max-md:text-sm max-md:leading-relaxed md:text-base md:leading-relaxed">
             {
-              "GlowLock is built on proven principles of habit formation psychology: implementation intentions, identity reinforcement, and the power of a pause before compulsive action."
+              "GlowLock is built on proven principles of habit formation psychology — implementation intentions, identity reinforcement, and the power of a pause before compulsive action."
             }
           </p>
         </div>

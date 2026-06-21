@@ -95,7 +95,7 @@ export default function PricingSection() {
               </span>
             </div>
             <p className="text-ploy-text-inverse-secondary leading-snug text-xs mt-2">
-              {"Just $6.67/mo, billed annually. Starts with a 7-day free trial."}
+              {"Just $6.67/mo, billed annually — starts with a 7-day free trial."}
             </p>
             <FeatureList inverse />
             <a
