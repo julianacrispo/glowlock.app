@@ -13,12 +13,12 @@ export default function Navbar() {
       <nav className="max-w-6xl flex justify-between items-center mx-auto px-6 py-4">
         <div className="flex items-center gap-2">
           <img
-            alt=""
+            alt="GlowLock app icon"
             loading="eager"
-            width="24"
-            height="24"
-            src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
-            className="w-6 overflow-clip"
+            width="28"
+            height="28"
+            src="/glow-icon.png"
+            className="w-7 h-7 rounded-md"
           />
           <span
             style={{
