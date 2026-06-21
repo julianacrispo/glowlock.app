@@ -33,9 +33,9 @@ function AccountabilitySectionIconItem({
 
 export const accountabilitySectionIcons: AccountabilitySectionIconItemProps[] =
   [
-    { text: "Choose exactly which apps to block" },
-    { text: "Add friends for social accountability" },
-    { text: "Track your progress together" },
+    { text: "Share your unlock time with friends you choose" },
+    { text: "Chat with your AI habit coach anytime" },
+    { text: "Journal entries and total phone use stay private" },
   ];
 
 export default function AccountabilitySection({
@@ -62,7 +62,7 @@ export default function AccountabilitySection({
             </h2>
             <p className="text-ploy-text-secondary leading-relaxed max-w-md max-md:text-sm max-md:leading-relaxed md:text-base md:leading-relaxed">
               {
-                "Add friends for accountability. They only see how much time you spent on blocked apps today — your coach conversations, shield messages, and insights stay private."
+                "Invite a few people you trust. They only see how much time you unlocked your blocked apps today — and when you need more than a nudge, your AI habit coach is one tap away."
               }
             </p>
             <div className="flex flex-col gap-3 mt-4">
@@ -72,7 +72,14 @@ export default function AccountabilitySection({
             </div>
           </div>
           <div className="w-full max-w-xs relative ml-auto max-lg:mr-auto lg:mr-0">
-            <AccountabilitySectionMockup />
+            <img
+              alt="Glowlock friends screen showing how much time friends unlocked their blocked apps today"
+              loading="lazy"
+              width="516"
+              height="688"
+              src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/91c759b3-2ffa1ab0-2.png"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
