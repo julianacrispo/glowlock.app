@@ -15,7 +15,7 @@ const SHARED_FEATURES: string[] = [
   "Friend accountability that stays private",
 ];
 
-const APP_STORE_HREF = "https://apps.apple.com/app/glowlock";
+const APP_STORE_HREF = "https://apps.apple.com/app/id6757251908";
 
 function FeatureList({ inverse = false }: { inverse?: boolean }) {
   return (

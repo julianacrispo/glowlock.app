@@ -16,12 +16,12 @@ export default function CtaSection() {
       <div className="text-center max-w-2xl mx-auto">
         <div className="flex justify-center mb-8">
           <img
-            alt=""
+            alt="GlowLock app icon"
             loading="eager"
-            width="48"
-            height="48"
-            src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/98534cdb-slurp-brain-icon.webp"
-            className="w-12 opacity-30 overflow-clip"
+            width="56"
+            height="56"
+            src="/glow-icon.png"
+            className="w-14 h-14 rounded-xl"
           />
         </div>
         <h2
@@ -40,7 +40,7 @@ export default function CtaSection() {
         </p>
         <div className="flex flex-col items-center gap-4 mt-8">
           <a
-            href="https://apps.apple.com/app/glowlock"
+            href="https://apps.apple.com/app/id6757251908"
             className="bg-ploy-background-accent-primary text-ploy-button-primary-text leading-snug font-bold text-sm tracking-[0.15em] uppercase flex items-center gap-3 duration-150 ease-in-out px-10 py-5 rounded-lg group hover:scale-102 hover:bg-ploy-background-accent-primary"
             data-ploy-component-type="button"
             data-ploy-component-variant="primary"
