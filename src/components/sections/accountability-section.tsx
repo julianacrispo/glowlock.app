@@ -1,4 +1,3 @@
-import AccountabilitySectionMockup from "../mockups/accountability-section-mockup";
 import AccountabilitySectionIcon1 from "../svgs/accountability-section-icon-1";
 
 /**
