@@ -88,6 +88,16 @@ export default function HeroSection() {
       <p className="text-ploy-text-secondary leading-snug text-xs tracking-[0.6px] mt-2">
         {"Former doomscrollers love us"}
       </p>
+      <div className="w-full max-w-[20rem] mt-14">
+        <img
+          alt="Glowlock shield screen shown when you open a blocked app, with an option to open the app intentionally"
+          loading="eager"
+          width="516"
+          height="688"
+          src="https://storage.googleapis.com/ployai/1128baac-0f0d-4b3b-aa46-b9e9e0069105/user/d568ce5a-2bfbb638-5.png"
+          className="w-full h-auto"
+        />
+      </div>
     </section>
   );
 }
