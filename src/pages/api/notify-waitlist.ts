@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-// SSR (must stay non-prerendered) — runs server-side only; this source never
+// SSR (must stay non-prerendered); runs server-side only; this source never
 // ships to the browser, so the webhook key below stays off the client.
 export const prerender = false;
 
