@@ -61,7 +61,7 @@ export default function AccountabilitySection({
             </h2>
             <p className="text-ploy-text-secondary leading-relaxed max-w-md max-md:text-sm max-md:leading-relaxed md:text-base md:leading-relaxed">
               {
-                "Invite a few people you trust. They only see how much time you unlocked your blocked apps today — and when you need more than a nudge, your AI habit coach is one tap away."
+                "Invite a few people you trust. They only see how much time you unlocked your blocked apps today. And when you need more than a nudge, your AI habit coach is one tap away."
               }
             </p>
             <div className="flex flex-col gap-3 mt-4">
