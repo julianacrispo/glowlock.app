@@ -91,7 +91,7 @@ export default function ProductFlowSection({
             }}
             className="text-balance text-ploy-text-primary leading-[1.1] italic [font-weight:inherit] max-md:text-4xl max-md:leading-[1.1] md:text-6xl md:leading-[1.1]"
           >
-            {"Not another blocker. A loop that rewires the habit."}
+            {"Most apps block you. This one rewires you."}
           </h2>
           <p className="text-ploy-text-secondary leading-relaxed max-w-xl mt-5 mx-auto max-md:text-sm max-md:leading-relaxed md:text-base md:leading-relaxed">
             {
