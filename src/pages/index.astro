@@ -1,11 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { HomePage } from "@/components/pages/home";
-import { SITE_CONFIG } from "@/site-config";
+import Page from "../components/pages/home";
 
 export const prerender = true;
 ---
 
-<Layout title={SITE_CONFIG.name} description={SITE_CONFIG.description}>
-  <HomePage client:load />
+<Layout title="GlowLock — Understand Why You Scroll">
+  <Fragment slot="head">
+    <meta name="description" content="GlowLock shields you from compulsive scrolling, reveals the emotions driving your habits, and helps you build the pause that rewires your behavior. 96+ five-star reviews on iOS." />
+    <meta property="og:title" content="GlowLock — Understand Why You Scroll" />
+    <meta property="og:description" content="GlowLock shields you from compulsive scrolling, reveals the emotions driving your habits, and helps you build the pause that rewires your behavior. 96+ five-star reviews on iOS." />
+  </Fragment>
+  <Page client:load />
 </Layout>
