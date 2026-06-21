@@ -11,6 +11,7 @@ export default [
 			"dist/",
 			".astro/",
 			".wrangler/",
+			".vercel/",
 			"node_modules/",
 			"worker-configuration.d.ts",
 		],

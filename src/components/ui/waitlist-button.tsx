@@ -6,7 +6,7 @@ import { submitForm } from "@/lib/ploy-forms/submit-form";
  * @ployComponentId waitlist-button
  * @ployComponentType component
  * @ployComponentPattern button
- * @ployComponentDescription Inline trigger + modal that captures an email for the GlowLock Android waitlist. Persists the signup to Ploy via submitForm("glowlock-android-waitlist") and fires a soft server-side alert to /api/notify-waitlist (Slack #leads). Brand-matched: cream panel, Instrument Serif heading, ink CTA. Pass `source` to tag where the signup came from; `children` overrides the trigger label.
+ * @ployComponentDescription Inline trigger + modal that captures an email for the GlowLock Android waitlist. Submits the signup to the site's own /api/waitlist endpoint, which fans out to whatever provider is configured via env vars (webhook, Resend email, ...). Brand-matched: cream panel, Instrument Serif heading, ink CTA. Pass `source` to tag where the signup came from; `children` overrides the trigger label.
  */
 const SERIF =
   "'Instrument Serif', 'Instrument Serif Fallback', Georgia, serif";
@@ -47,13 +47,6 @@ export default function WaitlistButton({
     const pageUrl = typeof window !== "undefined" ? window.location.href : "";
     try {
       await submitForm("glowlock-android-waitlist", { email, source, pageUrl });
-      // Soft real-time alert; never blocks the success state.
-      fetch("/api/notify-waitlist", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source, pageUrl }),
-        keepalive: true,
-      }).catch(() => {});
       setStatus("done");
     } catch {
       setStatus("error");

@@ -2,7 +2,7 @@ export async function submitForm(
   formName: string,
   data: Record<string, string>,
 ): Promise<{ ok: boolean }> {
-  const response = await fetch("/_ploy/form-submit", {
+  const response = await fetch("/api/waitlist", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ formName, pageUrl: window.location.href, data }),
