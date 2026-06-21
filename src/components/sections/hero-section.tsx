@@ -8,7 +8,7 @@ import WaitlistButton from "@/components/ui/waitlist-button";
  * @ployComponentId hero-section
  * @ployComponentType section
  * @ployComponentPattern hero
- * @ployComponentDescription Hero section with large editorial headline, supporting copy, primary CTA, and social proof. Desktop uses a two-column split (copy left, real "shield" app screen right) so the product is visible in the fold; mobile keeps the centered editorial stack with the phone below.
+ * @ployComponentDescription Hero section with large editorial headline, supporting copy, primary CTA, and social proof. Desktop uses a two-column split (copy left, pre-cropped /public/screens/shield.png app screen right) so the product is visible in the fold; mobile keeps the centered editorial stack with the phone below.
  */
 export default function HeroSection() {
   return (

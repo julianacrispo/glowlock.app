@@ -3,7 +3,7 @@
  * @ployComponentId product-flow-section
  * @ployComponentType section
  * @ployComponentPattern feature
- * @ployComponentDescription Product walkthrough gallery showing the real Glowlock app screens (choose apps, shield, AI coach, insights, friends) as a numbered loop on the cream canvas. Each item renders a step label plus a full app screenshot; the baked-in top caption is cropped off via an object-cover/object-bottom wrapper. Items lay out as a centered flex-wrap so an odd final row (4 & 5) stays centered.
+ * @ployComponentDescription Product walkthrough gallery showing the real Glowlock app screens (choose apps, shield, AI coach, insights, friends) as a numbered loop on the cream canvas. Each item renders a step label plus a full app screenshot served from /public/screens/*.png (pre-cropped to remove the baked-in caption while keeping the whole device). Items lay out as a centered flex-wrap so an odd final row (4 & 5) stays centered.
  */
 type ProductFlowItemProps = {
   step: string;
