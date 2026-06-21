@@ -29,7 +29,7 @@ export default function HeroSection() {
           </h1>
           <p className="text-ploy-text-secondary leading-relaxed text-lg text-center max-w-lg mt-6 lg:text-left">
             {
-              "GlowLock catches you the moment you reach for a habit and surfaces the feeling behind it. That awareness builds a pause that rewires the behavior, so change sticks where blockers fail."
+              "GlowLock helps you scroll on purpose instead of on autopilot. Each time you reach for a distracting app, it pauses you, names the feeling behind the urge, and lets you choose what comes next."
             }
           </p>
           <div className="flex flex-col items-center gap-4 mt-10 lg:items-start">
