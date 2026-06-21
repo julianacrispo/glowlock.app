@@ -5,7 +5,7 @@ import HeroSectionIcon1 from "../svgs/hero-section-icon-1";
  * @ployComponentId pricing-section
  * @ployComponentType section
  * @ployComponentPattern pricing
- * @ployComponentDescription Two-plan pricing section for Glowlock — annual ($79.99/yr with 7-day free trial, highlighted as the dark inverse card) and monthly ($16.99/mo). Shares one feature list across both plans, links to the App Store.
+ * @ployComponentDescription Two-plan pricing section for Glowlock: annual ($79.99/yr with 7-day free trial, highlighted as the dark inverse card) and monthly ($16.99/mo). Shares one feature list across both plans, links to the App Store.
  */
 const SHARED_FEATURES: string[] = [
   "Unlimited app shields, fully customizable",
@@ -66,7 +66,7 @@ export default function PricingSection() {
         </div>
 
         <div className="grid items-stretch grid-cols-1 gap-6 md:grid-cols-2 max-w-3xl mx-auto">
-          {/* Annual — highlighted */}
+          {/* Annual highlighted */}
           <div
             className="border-solid border-ploy-neutral-primary-s4 bg-ploy-background-inverse relative flex flex-col p-8 rounded-lg border shadow-[4px_5px_0px_0px_oklab(0.850565_0.00277162_0.0179251)]"
             data-ploy-component-type="card"
@@ -95,7 +95,7 @@ export default function PricingSection() {
               </span>
             </div>
             <p className="text-ploy-text-inverse-secondary leading-snug text-xs mt-2">
-              {"Just $6.67/mo, billed annually — starts with a 7-day free trial."}
+              {"Just $6.67/mo, billed annually. Starts with a 7-day free trial."}
             </p>
             <FeatureList inverse />
             <a

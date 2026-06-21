@@ -47,7 +47,7 @@ export default function WaitlistButton({
     const pageUrl = typeof window !== "undefined" ? window.location.href : "";
     try {
       await submitForm("glowlock-android-waitlist", { email, source, pageUrl });
-      // Soft real-time alert — never blocks the success state.
+      // Soft real-time alert; never blocks the success state.
       fetch("/api/notify-waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -152,7 +152,7 @@ export default function WaitlistButton({
                   />
                   {status === "error" && (
                     <p className="text-ploy-text-secondary leading-snug text-xs mt-2">
-                      {"Something went wrong — please try again."}
+                      {"Something went wrong. Please try again."}
                     </p>
                   )}
                   <button
